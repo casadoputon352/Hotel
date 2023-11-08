@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL DE NH</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>GEEK</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>LUGAR AGRADÁVEL E CONFORTÁVEL PARA FICAR</h2>
+                <p>Nós somos uma empresa de hotelaria que esta sempre a vontade para retribuir os clientes! Fique a vontade.</p>
+                <button type = "button" class = "head-btn">COMEÇAR</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Casa</a></li>
+                <li><a href = "#services">serviços</a></li>
+                <li><a href = "#rooms">quartos</a></li>
+                <li><a href = "#customers">Clientes</a></li>
+            </ul>
+            <button class = "btn sign-up">Inscrever-se</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>Serviços</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Alimentação/ Corredor de comida</h2>
+                        <p>Nessa parte você tem acesso aos melhores sabores do vale,junto temos o maximo comforto para você, Fique a vontade!</p>
+                        <button type = "button" class = "btn">saber mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refresco</h2>
+                        <p>Aqui você pode se divertir com a familia e com os amigos,todos tem um prazer em voltar a ser criança para ir além da imaginação!</p>
+                        <button type = "button" class = "btn">Saiba mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refresco</h2>
+                        <p>Nessa parte você terá um relaxamento incrivel para aproveitar o descanso, fique a vontade e relaxe!</p>
+                        <button type = "button" class = "btn">Saiba mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Segurança </h2>
+                        <p>Tudo com o maximo comforto e segurança para a sua privacidade com amigos e familia,Fique a vontade!</p>
+                        <button type = "button" class = "btn">Saiba mais</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Data de checkin: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Data de check-out: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adultos: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Crianças: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Quartos: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Agende Agora">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>quartos</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "463156637.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Quartos médio</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Quartos de tamanho médio.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Para no máximo 3 pessoas .
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Chaves de entrada automatica.
+                            </li>
+                        </ul>
+                        <p>Aquela tão sonhada viagem está chegando?</p>
+                        <p>Só falta escolher a estadia perfeita para que tudo seja inesquecível! Então confira os Quartos confortáveis para todos os bolsos, porque você não precisa gastar todas as suas economias no hotel!</p>
+                        <p class = "rate">
+                            <span>R$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">Agende agora</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "BA_RA-HOTEL-4.webp" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Quartos de luxo</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Aqui você tem quartos de nivel luxuosos.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Para no máximo 6 pessoas.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Chaves de entrada automatica.
+                            </li>
+                        </ul>
+                        <p>Se tem uma coisa que realmente deixa marcas é viajar com amigos. Para isso, você pode contar.Temos quartos para acomodar todo mundo de forma confortável para que vocês possam aproveitar as férias sem nenhum problema!faça a sua reserva agora mesmo!</p>
+                        <p>Faça a sua reserva agora mesmo!</p>
+                        <p class = "rate">
+                            <span>R$200.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">Agende agora</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "Hotel-Metropolitan-Nagano.webp" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Quartos Simples</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Quartos que cabem no seu bolso!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Para no máximo 3 pessoas.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Chaves na portaria.
+                            </li>
+                        </ul>
+                        <p>Não é porque você vai ficar na cidade apenas por alguns dias a trabalho que a sua estadia não precisa ser confortável.</p>
+                        <p>Todas as nossas acomodações foram pensadas para acomodar desde pessoas viajando a negócios, até famílias inteiras de férias!</p>
+                        <p class = "rate">
+                            <span>R$100.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">Agende agora</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>Clientes</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Gostamos disso</h3>
+                        <p>Queria compartilhar o quanto fiquei impressionado com a minha estadia em seu hotel. Desde o momento em que entrei, fui recebido com um sorriso caloroso e uma hospitalidade excepcional. O quarto era impecavelmente limpo e confortável, proporcionando uma noite de sono incrível.</p>
+                        <img src = "EVA7xYxXkAAkQ7T.jpg" alt = "customer image">
+                        <span>Mateus, Brasil</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Vida confortável</h3>
+                        <p>Gostaria de expressar minha gratidão por uma estadia absolutamente maravilhosa em seu estabelecimento. A atenção aos detalhes e o cuidado com o conforto dos hóspedes é verdadeiramente notável. O quarto era luxuoso e a vista deslumbrante.</p>
+                        <img src = "download (1).jpg" alt = "customer image">
+                        <span>Pedro, Chile</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Lugar legal</h3>
+                        <p>Gostaria de deixar registrado o meu apreço pela experiência excepcional que tive em seu hotel. Desde o momento da chegada até a partida, fui tratado com profissionalismo e simpatia.</p>
+                        <img src = "download.jpg" alt = "customer image">
+                        <span>João, Brasil</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Sobre nós </h2>
+                    <p>No Hotel de NH, nossa missão é proporcionar experiências excepcionais aos nossos hóspedes, combinando luxo, conforto e hospitalidade calorosa. Localizado em um cenário deslumbrante à beira-mar, nosso estabelecimento oferece um refúgio tranquilo para aqueles em busca de descanso e rejuvenescimento..</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Links Úteis</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Quartos</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Carreira</a>
+                    <a href = "#">Sobre nós           </a>
+                    <a href = "#">Contact </a>
+                    <a href = "#">Serviços</a>
+                </div>
+
+                <div>
+                    <h2>Ter uma questão</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203RS,BRASIL.SUL
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +510000999999
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@emain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
